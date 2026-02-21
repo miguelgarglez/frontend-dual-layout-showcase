@@ -13,8 +13,8 @@ Transformar esta prueba técnica en un case study de portfolio con identidad pro
 
 ## Action items
 [ ] Definir concepto de producto ficticio (nombre, tono, público, propuesta de valor) y documentarlo en `README.md`.
-[ ] Sustituir restos de naming heredado (labels, mocks, secciones) en `construccion-layouts/src/` por el nuevo dominio de producto.
-[ ] Revisar y ajustar paleta/tokens en `construccion-layouts/src/styles/index.css` para reforzar una identidad visual coherente.
+[ ] Sustituir restos de naming heredado (labels, mocks, secciones) en `src/` por el nuevo dominio de producto.
+[ ] Revisar y ajustar paleta/tokens en `src/styles/index.css` para reforzar una identidad visual coherente.
 [ ] Actualizar copy de la home y de cada sección clave (`/desktop`, `/responsive`) con microcopy orientado a claridad y acción.
 [ ] Reemplazar imágenes placeholder y avatares por assets neutrales y consistentes con el branding.
 [ ] Añadir capturas o GIFs del flujo desktop y mobile-first en el `README.md` principal.
@@ -24,4 +24,4 @@ Transformar esta prueba técnica en un case study de portfolio con identidad pro
 ## Open questions
 - ¿Quieres posicionarlo en tono más SaaS B2B o más consumer marketplace?
 - ¿Prefieres copy 100% en español o bilingüe (ES/EN) para recruiters internacionales?
-- ¿Quieres conservar `resolucion-problema/` dentro del repo público o separarlo en otro repositorio?
+- ¿Quieres mantener un repositorio aparte para ejercicios algorítmicos o centrar este repo solo en frontend visual?

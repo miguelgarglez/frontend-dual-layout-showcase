@@ -13,15 +13,17 @@ The project demonstrates how I built and structured two complete experiences fro
 - UI behavior covered with unit/component tests (Vitest + Testing Library).
 - Clear separation of concerns across `pages`, `components`, `hooks`, and `lib`.
 
+## Live demo
+
+- [frontend-dual-layout-showcase](https://miguelgarglez.github.io/frontend-dual-layout-showcase/)
+
 ## Repository structure
 
-- `construccion-layouts/`: Main frontend app (portfolio showcase).
-- `resolucion-problema/`: Complementary coding exercise solution.
+- Single-app repository with all source/config files at the project root (`src`, `public`, `vite.config.ts`, `package.json`).
 
 ## Run locally
 
 ```bash
-cd construccion-layouts
 pnpm install
 pnpm dev
 ```
