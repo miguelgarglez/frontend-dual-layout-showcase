@@ -10,7 +10,7 @@ const ComentariosReviewAvatar = ({ person, className }: ComentariosReviewAvatarP
   <FallbackImage
     as="div"
     src={person.avatar}
-    alt={`Avatar de ${person.name}`}
+    alt={`Avatar of ${person.name}`}
     className={className}
     imageClassName="object-cover"
   />

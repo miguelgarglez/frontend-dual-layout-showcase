@@ -102,14 +102,14 @@ describe('FrecuenciaSingleContent', () => {
       <ControlledFrecuencia initialKey="2025-01-08" onSelect={handleSelect} />,
     )
 
-    expect(screen.getByText('Enero')).toBeInTheDocument()
+    expect(screen.getByText('January')).toBeInTheDocument()
     const selectedOption = screen.getByRole('option', {
-      name: /miércoles 8 de enero/i,
+      name: /wednesday 8 of january/i,
     })
     expect(selectedOption).toHaveAttribute('aria-selected', 'true')
 
     const nextDay = screen.getByRole('option', {
-      name: /jueves 9 de enero/i,
+      name: /thursday 9 of january/i,
     })
     await user.click(nextDay)
 
@@ -125,15 +125,15 @@ describe('FrecuenciaSingleContent', () => {
     )
 
     await user.click(
-      screen.getByRole('button', { name: /mostrar selector de mes/i }),
+      screen.getByRole('button', { name: /open month picker/i }),
     )
-    const julyButton = await screen.findByRole('button', { name: 'Julio 2025' })
+    const julyButton = await screen.findByRole('button', { name: 'July 2025' })
     await user.click(julyButton)
 
     expect(handleSelect).toHaveBeenCalledWith('2025-07-08')
   })
 
-  it('permite navegar entre días con flechas manteniendo el rol listbox', async () => {
+  it('supports arrow-key day navigation while preserving listbox semantics', async () => {
     const handleSelect = vi.fn()
     const user = userEvent.setup()
 

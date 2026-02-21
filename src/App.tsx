@@ -14,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/desktop" element={<DesktopLayout />}>
-          <Route index element={<Navigate to="anuncios" replace />} />
+          <Route index element={<Navigate to="listings" replace />} />
           {desktopContentPageKeys.map((key) => (
             <Route key={key} path={key} element={<DesktopContentRenderer contentPageKey={key} />} />
           ))}

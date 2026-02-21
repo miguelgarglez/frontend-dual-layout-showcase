@@ -85,7 +85,7 @@ const TimeRangeSelector = ({
     <div
       className="space-y-6"
       role="radiogroup"
-      aria-label="Selecciona una franja horaria"
+      aria-label="Select a time range"
       data-time-range-selector="group"
     >
       {timeRangeGroups.map((group) => (

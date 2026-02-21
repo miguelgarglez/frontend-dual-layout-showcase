@@ -10,9 +10,9 @@ type ModeOption = {
 }
 
 const baseOptions: ModeOption[] = [
-  { value: 'range', title: 'Inicio flexible' },
-  { value: 'exact', title: 'Inicio exacto' },
-  { value: 'mixed', title: 'Inicio mixto' },
+  { value: 'range', title: 'Flexible start' },
+  { value: 'exact', title: 'Exact start' },
+  { value: 'mixed', title: 'Mixed start' },
 ]
 
 const segmentedOptions = baseOptions.map((option) => ({
@@ -33,7 +33,7 @@ const SegmentedControlHarness = ({
   return (
     <>
       <SegmentedControl
-        ariaLabel="Tipo de hora de inicio"
+        ariaLabel="Start time type"
         value={value}
         options={segmentedOptions}
         onChange={(nextValue) => {
@@ -54,7 +54,7 @@ describe('SegmentedControl', () => {
 
     render(<SegmentedControlHarness onChange={handleChange} />)
 
-    const exactTab = screen.getByRole('tab', { name: 'Inicio exacto' })
+    const exactTab = screen.getByRole('tab', { name: 'Exact start' })
     expect(exactTab).toHaveAttribute('aria-selected', 'false')
 
     await user.click(exactTab)

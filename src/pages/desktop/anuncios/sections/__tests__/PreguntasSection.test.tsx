@@ -8,15 +8,15 @@ describe('PreguntasSection FAQ reveal', () => {
     const user = userEvent.setup()
     render(<PreguntasSection />)
 
-    const toggle = screen.getByRole('button', { name: /ver todo/i })
-    expect(toggle).toHaveAttribute('aria-controls', 'preguntas-extra-content')
+    const toggle = screen.getByRole('button', { name: /show all/i })
+    expect(toggle).toHaveAttribute('aria-controls', 'faq-extra-content')
 
     const extraContent = document.getElementById(
-      'preguntas-extra-content',
+      'faq-extra-content',
     ) as HTMLDivElement | null
 
     if (!extraContent) {
-      throw new Error('Expected preguntas extra content container to exist')
+      throw new Error('Expected extra FAQ content container to exist')
     }
 
     expect(toggle).toHaveAttribute('aria-expanded', 'false')
@@ -25,13 +25,13 @@ describe('PreguntasSection FAQ reveal', () => {
     await user.click(toggle)
 
     expect(toggle).toHaveAttribute('aria-expanded', 'true')
-    expect(toggle).toHaveTextContent('Dejar de ver todo')
+    expect(toggle).toHaveTextContent('Show less')
     expect(extraContent).toHaveAttribute('aria-hidden', 'false')
 
     await user.click(toggle)
 
     expect(toggle).toHaveAttribute('aria-expanded', 'false')
-    expect(toggle).toHaveTextContent('Ver todo')
+    expect(toggle).toHaveTextContent('Show all')
     expect(extraContent).toHaveAttribute('aria-hidden', 'true')
   })
 })

@@ -9,8 +9,8 @@ import {
 } from '../../context/ResponsiveRequestFormContext'
 
 const selectionModes: Array<{ value: TimeSelectionMode; title: string }> = [
-  { value: 'range', title: 'Inicio flexible' },
-  { value: 'exact', title: 'Inicio exacto' },
+  { value: 'range', title: 'Flexible start' },
+  { value: 'exact', title: 'Exact start' },
 ]
 
 const HoraInicioSection = () => {
@@ -39,13 +39,13 @@ const HoraInicioSection = () => {
     <section className="space-y-4">
       <SectionHeader
         headingTone="neutral"
-        title="Hora de inicio"
+        title="Start time"
         titleSpacing="compact"
       />
       <div className="space-y-6 py-5">
         <div className="bg-greyscale-40/70 rounded-full p-1">
           <SegmentedControl
-            ariaLabel="Tipo de hora de inicio"
+            ariaLabel="Start time type"
             value={timeSelectionMode}
             options={segmentedOptions}
             onChange={setTimeSelectionMode}

@@ -16,13 +16,13 @@ const frequencyOptions: Array<{
 }> = [
   {
     value: 'single',
-    title: 'Sólo una vez',
-    helper: 'Puntual',
+    title: 'One-time',
+    helper: 'Single job',
   },
   {
     value: 'weekly',
-    title: 'Semanalmente',
-    helper: 'Recurrente',
+    title: 'Weekly',
+    helper: 'Recurring',
   },
 ]
 
@@ -47,12 +47,12 @@ const FrecuenciaSection = () => {
     <section className="space-y-4">
       <SectionHeader
         headingTone="neutral"
-        title="Frecuencia"
+        title="Frequency"
         titleSpacing="compact"
       />
       <div className="space-y-6">
         <SegmentedControl
-          ariaLabel="Seleccionar frecuencia"
+          ariaLabel="Select frequency"
           value={frequencyMode}
           options={frequencyTabs}
           onChange={setFrequencyMode}

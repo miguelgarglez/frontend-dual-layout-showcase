@@ -15,7 +15,7 @@ export type TimeRangeGroup = {
 
 export const timeRangeGroups: TimeRangeGroup[] = [
   {
-    label: 'Mañana',
+    label: 'Morning',
     ranges: [
       { id: 'range-06-09', label: '6 - 9', icon: 'sunrise' },
       { id: 'range-09-12', label: '9 - 12', icon: 'sun' },
@@ -23,7 +23,7 @@ export const timeRangeGroups: TimeRangeGroup[] = [
     ],
   },
   {
-    label: 'Tarde',
+    label: 'Afternoon',
     ranges: [
       { id: 'range-15-18', label: '15 - 18', icon: 'sun' },
       { id: 'range-18-21', label: '18 - 21', icon: 'sunset' },

@@ -27,13 +27,13 @@ const MonthHeader = ({
         variant="secondaryClient"
         size="md"
         className="ml-auto px-4 py-2 text-xs font-semibold"
-        aria-label="Mostrar selector de mes"
+        aria-label="Open month picker"
         aria-haspopup="dialog"
         aria-expanded={isMonthPickerOpen}
         ref={monthPickerTriggerRef}
         onClick={onOpenMonthPicker}
       >
-        Mostrar mes
+        Show month
       </Button>
     }
   />

@@ -3,14 +3,14 @@ import type { ReviewsOverview } from '../types'
 export const reviewsOverview: ReviewsOverview = {
   summary: {
     average: 4.6,
-    status: 'Muy bien',
+    status: 'Very good',
     totalReviews: 53,
   },
   breakdown: [
-    { id: 'servicio', label: 'Servicio', score: 5 },
-    { id: 'puntualidad', label: 'Puntualidad', score: 3.2 },
-    { id: 'amabilidad', label: 'Amabilidad', score: 4.1 },
-    { id: 'calidad-precio', label: 'Calidad / Precio', score: 5 },
-    { id: 'profesionalidad', label: 'Profesionalidad', score: 4 },
+    { id: 'service', label: 'Service', score: 5 },
+    { id: 'punctuality', label: 'Punctuality', score: 3.2 },
+    { id: 'friendliness', label: 'Friendliness', score: 4.1 },
+    { id: 'value', label: 'Value / Price', score: 5 },
+    { id: 'professionalism', label: 'Professionalism', score: 4 },
   ],
 }

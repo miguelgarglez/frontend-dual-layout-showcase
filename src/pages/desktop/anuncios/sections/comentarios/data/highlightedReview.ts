@@ -13,4 +13,4 @@ export const highlightedReview: HighlightedReview = {
 }
 
 export const formatDaysAgo = (days: number) =>
-  `Hace ${days} día${days === 1 ? '' : 's'}`
+  `${days} day${days === 1 ? '' : 's'} ago`

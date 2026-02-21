@@ -17,7 +17,7 @@ const PreguntasSection = () => {
   } = usePreguntasFaqs(faqs, PREVIEW_ITEMS)
 
   return (
-    <AnunciosSection title="Algunas preguntas sobre mí">
+    <AnunciosSection title="A few questions about me">
       <div className="flex flex-col gap-3">
         <div className="relative">
           <dl className="flex flex-col gap-8">
@@ -56,7 +56,7 @@ const PreguntasSection = () => {
             aria-expanded={isExpanded}
             aria-controls={extraContentId}
           >
-            {isExpanded ? 'Dejar de ver todo' : 'Ver todo'}
+            {isExpanded ? 'Show less' : 'Show all'}
           </Button>
         ) : null}
       </div>

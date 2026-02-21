@@ -8,18 +8,18 @@ describe('GaleriaSection dialog', () => {
     const user = userEvent.setup()
     render(<GaleriaSection />)
 
-    const trigger = screen.getByRole('button', { name: /ver galería/i })
+    const trigger = screen.getByRole('button', { name: /view gallery/i })
 
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
 
     await user.click(trigger)
 
     const dialog = await screen.findByRole('dialog', {
-      name: 'Galería completa',
+      name: 'Full gallery',
     })
     expect(dialog).toHaveAttribute('aria-modal', 'true')
 
-    const closeButton = within(dialog).getByRole('button', { name: /cerrar/i })
+    const closeButton = within(dialog).getByRole('button', { name: /close/i })
     await user.click(closeButton)
 
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
@@ -29,7 +29,7 @@ describe('GaleriaSection dialog', () => {
     const user = userEvent.setup()
     render(<GaleriaSection />)
 
-    const trigger = screen.getByRole('button', { name: /ver galería/i })
+    const trigger = screen.getByRole('button', { name: /view gallery/i })
     trigger.focus()
 
     await user.click(trigger)

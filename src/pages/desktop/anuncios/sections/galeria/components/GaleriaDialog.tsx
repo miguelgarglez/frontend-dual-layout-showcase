@@ -15,9 +15,9 @@ const GaleriaDialog = ({ open, images, onClose, titleId }: GaleriaDialogProps) =
     <div className="max-h-[90vh] overflow-hidden rounded-xl">
       <div className="flex items-start justify-between border-b border-greyscale-80 px-6 py-4">
         <p id={titleId} className="text-pinned-navy text-xl font-semibold">
-          Galería completa
+          Full gallery
         </p>
-        <GaleriaLinkButton label="Cerrar" onClick={onClose} />
+        <GaleriaLinkButton label="Close" onClick={onClose} />
       </div>
       <div className="max-h-[75vh] overflow-y-auto px-6 py-6">
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">

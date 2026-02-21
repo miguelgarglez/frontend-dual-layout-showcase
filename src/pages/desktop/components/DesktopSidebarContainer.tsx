@@ -86,7 +86,7 @@ const DesktopSidebarContainer = ({
         aria-controls={sidebarId}
         aria-expanded={isSidebarOpen}
         aria-label={
-          isSidebarOpen ? 'Cerrar menú lateral' : 'Abrir menú lateral'
+          isSidebarOpen ? 'Close sidebar menu' : 'Open sidebar menu'
         }
         className={cn(
           'pressable focus-outline-brand absolute top-4 z-50 inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow transition-all duration-300 ease-out lg:hidden',

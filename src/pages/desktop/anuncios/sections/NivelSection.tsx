@@ -3,8 +3,8 @@ import AnunciosSection from '../AnunciosSection'
 import SectionDivider from '@components/ui/SectionDivider'
 
 const tier = {
-  name: 'Plata',
-  progress: 'Logros: 1 de 4',
+  name: 'Silver',
+  progress: 'Achievements: 1 of 4',
 }
 
 const NivelBadge = () => (
@@ -39,7 +39,7 @@ const NivelButton = () => (
 )
 
 const NivelSection = () => (
-  <AnunciosSection title="Nivel">
+  <AnunciosSection title="Level">
     <div className="flex flex-col gap-6">
       <NivelButton />
       <SectionDivider />

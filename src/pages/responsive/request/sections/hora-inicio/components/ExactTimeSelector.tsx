@@ -44,11 +44,11 @@ const ExactTimeSelector = ({
     >
       {/* Hidden context ensures screen readers announce the purpose of both wheels before users interact */}
       <p id={groupLabelId} className="sr-only">
-        Selecciona la hora exacta
+        Select exact time
       </p>
       <p id={instructionsId} className="sr-only">
-        La columna izquierda corresponde a las horas en formato de 24 horas y la
-        columna derecha a los minutos en incrementos de cinco.
+        The left column is hours in 24-hour format, and the right column is
+        minutes in five-minute increments.
       </p>
       <div
         className="bg-greyscale-40/60 absolute inset-x-0 top-1/2 z-0 h-10 -translate-y-1/2 rounded-xl"
@@ -59,8 +59,8 @@ const ExactTimeSelector = ({
           values={wheelHourValues}
           selectedValue={selectedHour}
           onSelect={onSelectHour}
-          ariaLabel="Selector de horas"
-          optionLabelPrefix="Hora"
+          ariaLabel="Hour picker"
+          optionLabelPrefix="Hour"
           idPrefix="hour"
         />
         <span className="text-greyscale-140 text-[18px] font-medium">:</span>
@@ -68,8 +68,8 @@ const ExactTimeSelector = ({
           values={wheelMinuteValues}
           selectedValue={selectedMinute}
           onSelect={onSelectMinute}
-          ariaLabel="Selector de minutos"
-          optionLabelPrefix="Minuto"
+          ariaLabel="Minute picker"
+          optionLabelPrefix="Minute"
           idPrefix="minute"
         />
       </div>

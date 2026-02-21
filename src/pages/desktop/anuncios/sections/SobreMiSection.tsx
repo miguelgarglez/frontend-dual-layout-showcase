@@ -17,7 +17,7 @@ const SobreMiSection = () => {
   const aboutCopyId = useId()
 
   return (
-    <AnunciosSection title="Sobre mí">
+    <AnunciosSection title="About me">
       <div className="space-y-4">
         <p
           id={aboutCopyId}
@@ -77,7 +77,7 @@ const ToggleButton = ({
       />
     </span>
     <span className="relative text-base font-semibold underline underline-offset-4">
-      {expanded ? 'Ver menos' : 'Ver más'}
+      {expanded ? 'Show less' : 'Show more'}
     </span>
   </Button>
 )

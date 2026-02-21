@@ -13,7 +13,7 @@ const DesktopSidebar = () => {
 
   return (
     <nav
-      aria-label="Navegación principal"
+      aria-label="Main navigation"
       className="bg-greyscale-20 flex h-full flex-col justify-between px-4 pt-4 pb-8"
     >
       <div className="space-y-8">
@@ -127,7 +127,7 @@ const SidebarFooter = ({ onLogout }: { onLogout: () => void }) => (
     onClick={onLogout}
   >
     <LogOut className="h-4 w-4" />
-    <span>Cerrar sesión</span>
+    <span>Sign out</span>
   </Button>
 )
 

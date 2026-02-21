@@ -2,34 +2,34 @@
 
 @theme {
   --color-basic-white: #FFFFFF;
-  --color-pinned-greyscale-140: #2E2929;
-  --color-greyscale-140: #2E2929;
-  --color-pinned-navy: #1E3F65;
-  --color-greyscale-20: #F9FAFB;
-  --color-greyscale-40: #F1F3F5;
-  --color-greyscale-60: #EBEBEC;
-  --color-greyscale-80: #DDDDDD;
-  --color-greyscale-100: #ADADAD;
-  --color-greyscale-120: #636C76;
-  --color-client-40: #E6FAF9;
-  --color-client-100: #00BFB5;
-  --color-client-120: #33939D;
-  --color-professional-100: #0084BF;
-  --color-professional-20: #F1F9FF;
-  --color-error-100: #F46C6D;
-  --color-warning-100: #FFC048;
-  --color-overlay-90: #0A1C33;
+  --color-pinned-greyscale-140: #1F2937;
+  --color-greyscale-140: #1F2937;
+  --color-pinned-navy: #0F2A43;
+  --color-greyscale-20: #F8FAFC;
+  --color-greyscale-40: #EEF2F7;
+  --color-greyscale-60: #E2E8F0;
+  --color-greyscale-80: #CBD5E1;
+  --color-greyscale-100: #94A3B8;
+  --color-greyscale-120: #64748B;
+  --color-client-40: #E7F1FF;
+  --color-client-100: #1D4ED8;
+  --color-client-120: #1E40AF;
+  --color-professional-100: #0EA5E9;
+  --color-professional-20: #EAF7FF;
+  --color-error-100: #E5484D;
+  --color-warning-100: #F59E0B;
+  --color-overlay-90: #0B1324;
   --color-supply-white-opacity-45: #FFFFFF73;
-  --color-white-opacity-25: #FFFFFF40; /* Supply token: white at 25% */
-  --color-silver-border: #D5D5D5; /* Supply token: borde exterior medalla */
-  --shadow-positive-1: 0px 3px 6px 0px #00000029; /* Figma: shadow_positive_1 */
+  --color-white-opacity-25: #FFFFFF40;
+  --color-silver-border: #C6CEDA;
+  --shadow-positive-1: 0px 3px 6px 0px #00000029;
 }
 
 :root {
-  --gradient-gradient_client: radial-gradient(120% 120% at 50% 0%, #33939D 0%, #00BFB5 60%);
-  --gradient-gradient_bg_silver_medal: linear-gradient(90deg, #64A7FC 0%, #1F47A5 100%);
-  --gradient-medal-silver: linear-gradient(135deg, #D3D3D3 0%, #ADADAD 100%);
-  --gradient-medal-ring: linear-gradient(135deg, #EDF0F2 0%, #CED0D9 100%);
+  --gradient-gradient_client: radial-gradient(120% 120% at 50% 0%, #274C9B 0%, #1D4ED8 60%);
+  --gradient-gradient_bg_silver_medal: linear-gradient(90deg, #F59E0B 0%, #EA580C 100%);
+  --gradient-medal-silver: linear-gradient(135deg, #E2E8F0 0%, #94A3B8 100%);
+  --gradient-medal-ring: linear-gradient(135deg, #F8FAFC 0%, #D2DAE6 100%);
   --shadow-positive-1: 0px 3px 6px 0px #00000029;
 }
 /* stylelint-disable at-rule-no-unknown */

@@ -43,7 +43,7 @@ const ResponsiveRequestFooter = ({ feedback }: ResponsiveRequestFooterProps) => 
           onClick={resetForm}
           disabled={isSubmitting}
         >
-          Omitir
+          Skip
         </Button>
         <Button
           type="submit"
@@ -61,7 +61,7 @@ const ResponsiveRequestFooter = ({ feedback }: ResponsiveRequestFooterProps) => 
           ) : (
             <Search className="h-5 w-5" aria-hidden strokeWidth={2} />
           )}
-          Buscar
+          Search
         </Button>
       </div>
       <p

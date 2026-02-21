@@ -5,7 +5,7 @@ import ValoracionesSummaryCard from './valoraciones/components/ValoracionesSumma
 import ValoracionesBreakdown from './valoraciones/components/ValoracionesBreakdown'
 
 const ValoracionesSection = () => (
-  <AnunciosSection title="Valoraciones" titleVisuallyHidden>
+  <AnunciosSection title="Ratings" titleVisuallyHidden>
     <div className="text-pinned-greyscale-140 flex flex-col gap-6">
       <SectionDivider />
       <ValoracionesSummaryCard summary={reviewsOverview.summary} />

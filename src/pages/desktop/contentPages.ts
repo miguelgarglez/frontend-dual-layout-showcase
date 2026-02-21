@@ -4,7 +4,7 @@ import { CalendarDays, Inbox, Headset, MessageCircle, Megaphone, Users, PiggyBan
 import AnunciosContent from './anuncios/AnunciosContent'
 import NonExistingContent from '@pages/desktop/components/NonExistingContent'
 
-const navGroupOrder = ['Servicios', 'Perfil'] as const
+const navGroupOrder = ['Services', 'Profile'] as const
 type NavGroup = (typeof navGroupOrder)[number]
 
 type DesktopContentPageDefinition = {
@@ -25,58 +25,58 @@ type DesktopContentPageDefinition = {
  */
 const desktopContentPageDefinitions = [
   {
-    key: 'calendario',
-    title: 'Calendario',
-    navGroup: 'Servicios',
-    navLabel: 'Calendario',
+    key: 'calendar',
+    title: 'Calendar',
+    navGroup: 'Services',
+    navLabel: 'Calendar',
     icon: CalendarDays,
     render: NonExistingContent,
   },
   {
-    key: 'solicitudes',
-    title: 'Solicitudes',
-    navGroup: 'Servicios',
-    navLabel: 'Solicitudes',
+    key: 'requests',
+    title: 'Requests',
+    navGroup: 'Services',
+    navLabel: 'Requests',
     icon: Inbox,
     render: NonExistingContent,
   },
   {
-    key: 'mensajes',
-    title: 'Mensajes',
-    navGroup: 'Perfil',
-    navLabel: 'Mensajes',
+    key: 'messages',
+    title: 'Messages',
+    navGroup: 'Profile',
+    navLabel: 'Messages',
     icon: MessageCircle,
     render: NonExistingContent,
   },
   {
-    key: 'saldo',
-    title: 'Saldo',
-    navGroup: 'Perfil',
-    navLabel: 'Saldo',
+    key: 'balance',
+    title: 'Balance',
+    navGroup: 'Profile',
+    navLabel: 'Balance',
     icon: PiggyBank,
     render: NonExistingContent,
   },
   {
-    key: 'anuncios',
-    title: 'Anuncios',
-    navGroup: 'Perfil',
-    navLabel: 'Anuncios',
+    key: 'listings',
+    title: 'Listings',
+    navGroup: 'Profile',
+    navLabel: 'Listings',
     icon: Megaphone,
     render: AnunciosContent,
   },
   {
-    key: 'trabajadores',
-    title: 'Trabajadores',
-    navGroup: 'Perfil',
-    navLabel: 'Trabajadores',
+    key: 'workers',
+    title: 'Workers',
+    navGroup: 'Profile',
+    navLabel: 'Workers',
     icon: Users,
     render: NonExistingContent,
   },
   {
-    key: 'soporte',
-    title: 'Soporte',
+    key: 'support',
+    title: 'Support',
     navGroup: undefined,
-    navLabel: 'Soporte',
+    navLabel: 'Support',
     icon: Headset,
     render: NonExistingContent,
   },

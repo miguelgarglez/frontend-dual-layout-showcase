@@ -7,8 +7,8 @@ const renderSidebar = () =>
   render(
     <DesktopSidebarContainer>
       <nav aria-label="Sidebar quick actions" className="flex flex-col gap-2">
-        <a href="#primer-enlace">Primer enlace</a>
-        <button type="button">Acción lateral</button>
+        <a href="#first-link">First link</a>
+        <button type="button">Side action</button>
       </nav>
     </DesktopSidebarContainer>,
   )
@@ -57,7 +57,7 @@ describe('DesktopSidebarContainer', () => {
     const user = userEvent.setup()
     renderSidebar()
 
-    const toggle = screen.getByRole('button', { name: /abrir menú lateral/i })
+    const toggle = screen.getByRole('button', { name: /open sidebar menu/i })
     const sidebar = screen.getByRole('complementary', { hidden: true })
 
     expect(toggle).toHaveAttribute('aria-expanded', 'false')
@@ -83,11 +83,11 @@ describe('DesktopSidebarContainer', () => {
     const user = userEvent.setup()
     renderSidebar()
 
-    const toggle = screen.getByRole('button', { name: /abrir menú lateral/i })
+    const toggle = screen.getByRole('button', { name: /open sidebar menu/i })
 
     await user.click(toggle)
 
-    const firstNavLink = screen.getByRole('link', { name: /primer enlace/i })
+    const firstNavLink = screen.getByRole('link', { name: /first link/i })
     await waitFor(() => expect(firstNavLink).toHaveFocus())
 
     await user.keyboard('{Escape}')
@@ -118,7 +118,7 @@ describe('DesktopSidebarContainer', () => {
 
     try {
       renderSidebar()
-      const toggle = screen.getByRole('button', { name: /abrir menú lateral/i })
+      const toggle = screen.getByRole('button', { name: /open sidebar menu/i })
       const sidebar = screen.getByRole('complementary', { hidden: true })
 
       await user.click(toggle)

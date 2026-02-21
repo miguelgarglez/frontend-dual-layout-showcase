@@ -9,7 +9,7 @@ const ComentariosSection = () => {
   const { client, worker, serviceDaysAgo } = highlightedReview
 
   return (
-    <AnunciosSection title="Comentarios">
+    <AnunciosSection title="Reviews">
       <div className="space-y-6">
         <SectionDivider />
         <ComentariosHighlightedReviewHeader

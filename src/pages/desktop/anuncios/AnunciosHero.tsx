@@ -10,15 +10,15 @@ const AnunciosHero = () => {
         <FallbackImage
           as="div"
           src={profileImage}
-          alt="Avatar de Equipo TaskNest"
+          alt="Avatar of the TaskNest team"
           className="h-28 w-28 overflow-hidden rounded-full border border-greyscale-80 ring-4 ring-slate-100"
           imageClassName="object-cover object-center"
           fallbackClassName="text-lg text-slate-500"
           fallbackContent="TN"
         />
         <div>
-          <p className="text-lg font-semibold text-pinned-greyscale-140">Equipo TaskNest</p>
-          <p className="text-base text-greyscale-120">Manitas</p>
+          <p className="text-lg font-semibold text-pinned-greyscale-140">TaskNest Team</p>
+          <p className="text-base text-greyscale-120">Home Services Pro</p>
         </div>
       </div>
     </section>

@@ -8,13 +8,13 @@ describe('ServiciosSection accordion', () => {
     const user = userEvent.setup()
     render(<ServiciosSection />)
 
-    const montageToggle = screen.getByRole('button', { name: /montaje/i })
+    const montageToggle = screen.getByRole('button', { name: /assembly/i })
     const montagePanel = document.getElementById(
       'service-row-montaje',
     ) as HTMLDivElement | null
 
     if (!montagePanel) {
-      throw new Error('Expected montage accordion panel to be rendered')
+      throw new Error('Expected assembly accordion panel to be rendered')
     }
 
     expect(montageToggle).toHaveAttribute('aria-expanded', 'true')
@@ -38,7 +38,7 @@ describe('ServiciosSection accordion', () => {
     const user = userEvent.setup()
     render(<ServiciosSection />)
 
-    const colgadoToggle = screen.getByRole('button', { name: /colgado/i })
+    const colgadoToggle = screen.getByRole('button', { name: /wall mounting/i })
     const controlledId = colgadoToggle.getAttribute('aria-controls')
     expect(controlledId).toBe('service-row-colgado')
 
@@ -47,7 +47,7 @@ describe('ServiciosSection accordion', () => {
     ) as HTMLDivElement | null
 
     if (!colgadoPanel) {
-      throw new Error('Expected colgado accordion panel to be rendered')
+      throw new Error('Expected wall-mounting accordion panel to be rendered')
     }
 
     expect(colgadoToggle).toHaveAttribute('aria-expanded', 'false')

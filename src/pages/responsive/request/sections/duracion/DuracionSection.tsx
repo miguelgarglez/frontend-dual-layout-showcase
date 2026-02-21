@@ -83,7 +83,7 @@ const DuracionSection = () => {
     <section className="space-y-4">
       <SectionHeader
         headingTone="neutral"
-        title="Duración"
+        title="Duration"
         titleSpacing="compact"
         titleAddonPlacement="inline"
         titleAddon={
@@ -93,7 +93,7 @@ const DuracionSection = () => {
         }
       />
       <label htmlFor={sliderId} className="sr-only">
-        Selecciona cuánto durará el servicio
+        Select how long the service will take
       </label>
       <DurationSlider
         id={sliderId}

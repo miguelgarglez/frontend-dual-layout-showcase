@@ -38,10 +38,10 @@ const MonthPicker = ({
           id={monthPickerHeadingId}
           className="text-pinned-navy text-lg font-semibold"
         >
-          Seleccionar mes
+          Select month
         </h3>
         <Button variant="link" size="inline" linkTone="navy" onClick={onClose}>
-          Cerrar
+          Close
         </Button>
       </div>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">

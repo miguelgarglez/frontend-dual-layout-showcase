@@ -16,7 +16,7 @@ const ValoracionesSummaryCard = ({ summary }: { summary: ReviewsSummary }) => (
     <div className="text-pinned-greyscale-140 ml-1 flex flex-col text-base">
       <span className="font-semibold">{summary.status}</span>
       <span className="text-greyscale-120 text-sm">
-        ({summary.totalReviews} valoraciones)
+        ({summary.totalReviews} reviews)
       </span>
     </div>
   </div>

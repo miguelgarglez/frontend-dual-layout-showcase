@@ -11,8 +11,8 @@ const GaleriaSection = () => {
 
   return (
     <AnunciosSection
-      title="Galería"
-      titleAddon={<GaleriaLinkButton label="Ver galería" onClick={openDialog} />}
+      title="Gallery"
+      titleAddon={<GaleriaLinkButton label="View gallery" onClick={openDialog} />}
     >
       {/* Future: wrap these cards in a carousel with drag/fling if the design requests it again. */}
       <GaleriaCarousel images={galleryImages} />

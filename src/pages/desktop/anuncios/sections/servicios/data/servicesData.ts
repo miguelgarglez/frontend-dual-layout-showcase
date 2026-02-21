@@ -5,7 +5,7 @@ import { type ServiceRow } from '../types'
 export const servicesData: ServiceRow[] = [
   {
     id: 'montaje',
-    title: 'Montaje',
+    title: 'Assembly',
     icon: Bolt,
     defaultOpen: true,
     children: [
@@ -17,19 +17,19 @@ export const servicesData: ServiceRow[] = [
         details: [
           {
             id: 'desk-chair-premium',
-            name: 'De escritorio',
+            name: 'Desk chair',
             price: '29,3€',
             duration: '00:55',
           },
           {
             id: 'desk-chair-basic',
-            name: 'De escritorio',
+            name: 'Desk chair',
             price: '20€',
             duration: '00:55',
           },
           {
             id: 'desk-chair-home',
-            name: 'De escritorio',
+            name: 'Desk chair',
             price: '29,3€',
             duration: '00:55',
           },
@@ -39,23 +39,23 @@ export const servicesData: ServiceRow[] = [
   },
   {
     id: 'colgado',
-    title: 'Colgado',
+    title: 'Wall mounting',
     icon: Hammer,
     placeholder:
-      'Añade tus servicios de colgado para que los clientes conozcan tus especialidades.',
+      'Add your wall-mounting services so clients can see your specialties.',
   },
   {
     id: 'instalacion',
-    title: 'Instalación',
+    title: 'Installation',
     icon: Drill,
     placeholder:
-      'Configura desde tu panel los servicios de instalación que quieres ofrecer.',
+      'Configure the installation services you want to offer from your dashboard.',
   },
   {
     id: 'pequenos-arreglos',
-    title: 'Pequeños arreglos',
+    title: 'Small repairs',
     icon: Wrench,
     placeholder:
-      'Aquí aparecerán los arreglos rápidos que definas. Puedes duplicar filas fácilmente.',
+      'Quick fixes you define will appear here. You can duplicate rows easily.',
   },
 ]

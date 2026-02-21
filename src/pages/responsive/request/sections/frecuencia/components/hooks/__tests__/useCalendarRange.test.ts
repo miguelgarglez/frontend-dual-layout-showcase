@@ -28,8 +28,14 @@ describe('useCalendarRange', () => {
     expect(formatDateKey(calendarDays.at(-1)!)).toBe('2025-07-31')
 
     expect(availableMonths).toHaveLength(7)
-    expect(availableMonths[0]).toMatchObject({ key: '2025-00', label: 'Enero 2025' })
-    expect(availableMonths.at(-1)).toMatchObject({ key: '2025-06', label: 'Julio 2025' })
+    expect(availableMonths[0]).toMatchObject({
+      key: '2025-00',
+      label: 'January 2025',
+    })
+    expect(availableMonths.at(-1)).toMatchObject({
+      key: '2025-06',
+      label: 'July 2025',
+    })
 
     expect(monthAnchors[0]).toEqual({ monthKey: '2025-00', dayKey: '2025-01-03' })
     expect(monthAnchors.at(-1)).toEqual({ monthKey: '2025-06', dayKey: '2025-07-01' })
@@ -67,7 +73,7 @@ describe('useCalendarRange', () => {
     expect(formatDateKey(calendarDays.at(-1)!)).toBe('2026-06-30')
     expect(availableMonths.at(-1)).toMatchObject({
       key: '2026-05',
-      label: 'Junio 2026',
+      label: 'June 2026',
     })
     expect(normalizedSelectedDateKey).toBe('2025-12-25')
   })

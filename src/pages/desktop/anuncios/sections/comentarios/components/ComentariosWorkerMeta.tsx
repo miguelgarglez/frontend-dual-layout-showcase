@@ -8,7 +8,7 @@ const ComentariosWorkerMeta = ({ worker }: { worker: ReviewParticipant }) => (
       className="h-4 w-4 overflow-hidden rounded-full border border-greyscale-80"
     />
     <p className="text-xs font-medium text-greyscale-120">
-      Servicio con <span className="font-semibold">{worker.name}</span>
+      Service with <span className="font-semibold">{worker.name}</span>
     </p>
   </div>
 )

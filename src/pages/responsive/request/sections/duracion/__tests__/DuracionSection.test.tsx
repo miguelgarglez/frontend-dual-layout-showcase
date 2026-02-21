@@ -34,7 +34,7 @@ describe('DuracionSection', () => {
     renderDuracionSection()
 
     const slider = screen.getByRole('slider', {
-      name: /selecciona cuánto durará el servicio/i,
+      name: /select how long the service will take/i,
     })
     expect(screen.getByText('1h 15min')).toBeInTheDocument()
     expect(screen.getByTestId('duration-minutes')).toHaveTextContent('75')

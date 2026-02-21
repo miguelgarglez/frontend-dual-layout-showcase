@@ -8,13 +8,13 @@ import { servicesData } from './servicios/data/servicesData'
 const ServiciosNotice = () => (
   <div className="bg-greyscale-20 text-pinned-greyscale-140 inline-flex w-fit items-center gap-2 rounded-sm px-4 py-2 text-sm">
     <ReceiptEuro className="h-4 w-4" strokeWidth={2.5} aria-hidden />
-    Recargo en pedidos inferiores a:
+    Surcharge for orders below:
     <span className="font-semibold">23€</span>
   </div>
 )
 
 const ServiciosSection = () => (
-  <AnunciosSection title="Mis servicios">
+  <AnunciosSection title="My services">
     <div className="flex flex-col gap-4">
       <ServiciosNotice />
       <div className="px-6">

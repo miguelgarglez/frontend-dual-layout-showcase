@@ -103,7 +103,7 @@ const DayScroller = ({
       role="listbox"
       tabIndex={0}
       aria-activedescendant={activeDescendantId}
-      aria-label={`Seleccionar día en ${visibleMonthDetails.label} ${visibleMonthDetails.year}`}
+      aria-label={`Select a day in ${visibleMonthDetails.label} ${visibleMonthDetails.year}`}
       className="focus-outline-brand flex gap-2 overflow-x-auto pb-1"
       onKeyDown={handleKeyDown}
     >
@@ -121,7 +121,7 @@ const DayScroller = ({
             tabIndex={-1}
             role="option"
             aria-selected={isSelected}
-            aria-label={`${longWeekdayLabels[weekdayIndex]} ${date.getDate()} de ${monthLabels[date.getMonth()]}`}
+            aria-label={`${longWeekdayLabels[weekdayIndex]} ${date.getDate()} of ${monthLabels[date.getMonth()]}`}
             onMouseDown={(event) => event.preventDefault()}
             onClick={() => selectDay(date)}
             variant="secondaryClient"

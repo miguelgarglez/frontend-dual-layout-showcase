@@ -18,7 +18,7 @@ const ResponsiveLayout = () => {
   const handleFormSubmit = async (values: ResponsiveRequestFormValues) => {
     setSubmissionFeedback({
       status: 'info',
-      message: 'Buscando disponibilidad (mock)...',
+      message: 'Searching availability (mock)...',
     })
 
     // Mock network wait so the spinner/feedback are visible in the portfolio demo.
@@ -29,7 +29,7 @@ const ResponsiveLayout = () => {
 
     setSubmissionFeedback({
       status: 'success',
-      message: '¡Listo! Busca ajustando los filtros para ver más (mock).',
+      message: 'Done! Try adjusting filters to explore more results (mock).',
     })
   }
 
@@ -49,7 +49,7 @@ const ResponsiveLayout = () => {
     <main className="bg-gradient-client text-basic-white min-h-screen">
       <div className="flex min-h-screen flex-col">
         <div ref={headerRef}>
-          <ResponsiveRequestHeader title="¿Cuándo lo necesitas?" />
+          <ResponsiveRequestHeader title="When do you need it?" />
         </div>
 
         <div className="bg-basic-white text-greyscale-140 flex flex-1 flex-col rounded-t-3xl px-6 pt-6 pb-8 shadow-[0_-12px_32px_rgba(0,0,0,0.12)]">

@@ -10,17 +10,17 @@ type ServiciosDetailsTableProps = {
 const ServiciosDetailsTable = ({ details }: ServiciosDetailsTableProps) => (
   <div className="text-pinned-greyscale-140">
     <table className="w-full border-separate border-spacing-y-2 text-base">
-      <caption className="sr-only">Tarifas y duración de los servicios</caption>
+      <caption className="sr-only">Service rates and duration</caption>
       <thead>
         <tr className="text-pinned-greyscale-140 text-xs font-normal tracking-wide">
           <th scope="col" className="sr-only w-[60%]">
-            Servicio
+            Service
           </th>
           <th scope="col" className="px-6 text-center font-normal">
-            Precio
+            Price
           </th>
           <th scope="col" className="px-6 text-center font-normal">
-            Duración
+            Duration
           </th>
         </tr>
       </thead>
@@ -36,10 +36,10 @@ const ServiciosDetailsTable = ({ details }: ServiciosDetailsTableProps) => (
                   size="inline"
                   linkTone="professional"
                   className="w-fit justify-start gap-1 text-sm"
-                  aria-label={`Ver detalles del servicio ${detail.name}, precio ${detail.price}, duración ${detail.duration}`}
+                  aria-label={`View details for service ${detail.name}, price ${detail.price}, duration ${detail.duration}`}
                 >
                   <Info className="h-4 w-4" strokeWidth={2.5} />
-                  Detalles
+                  Details
                 </Button>
               </div>
             </td>

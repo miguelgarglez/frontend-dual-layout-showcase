@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import type { FaqItem } from '../types'
 
-const EXTRA_CONTENT_ID = 'preguntas-extra-content'
+const EXTRA_CONTENT_ID = 'faq-extra-content'
 
 const usePreguntasFaqs = (items: FaqItem[], previewCount: number) => {
   const [isExpanded, setIsExpanded] = useState(false)

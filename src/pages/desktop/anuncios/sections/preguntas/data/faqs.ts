@@ -2,28 +2,28 @@ import type { CleaningOption, FaqItem } from '../types'
 
 export const cleaningOptions: CleaningOption[] = [
   {
-    label: 'Limpieza general del hogar (habitaciones, baños y cocina)',
+    label: 'General home cleaning (bedrooms, bathrooms, and kitchen)',
   },
   {
-    label: 'Limpieza a fondo',
+    label: 'Deep cleaning',
   },
   {
-    label: 'Limpieza después de la obra',
+    label: 'Post-renovation cleaning',
   },
 ]
 
 export const faqs: FaqItem[] = [
   {
     id: 'ironing-experience',
-    question: '¿Cuánta experiencia tienes planchando?',
+    question: 'How much ironing experience do you have?',
     answer: {
       type: 'text',
-      content: '20 años de experiencia',
+      content: '20 years of experience',
     },
   },
   {
     id: 'cleaning-types',
-    question: 'Indica los tipos de limpieza que puedes realizar',
+    question: 'What types of cleaning services can you provide?',
     answer: {
       type: 'cleaning-options',
       options: cleaningOptions,
@@ -31,20 +31,20 @@ export const faqs: FaqItem[] = [
   },
   {
     id: 'availability',
-    question: '¿En qué horarios sueles estar disponible?',
+    question: 'What hours are you usually available?',
     answer: {
       type: 'text',
       content:
-        'De lunes a viernes de 8:00 a 18:00. Sábados bajo solicitud previa.',
+        'Monday to Friday from 8:00 to 18:00. Saturdays upon request.',
     },
   },
   {
     id: 'supplies',
-    question: '¿Llevas tus propios productos de limpieza?',
+    question: 'Do you bring your own cleaning products?',
     answer: {
       type: 'text',
       content:
-        'Sí. Utilizo productos ecológicos y puedo adaptarme si prefieres que use los tuyos.',
+        'Yes. I use eco-friendly products and can adapt if you prefer I use yours.',
     },
   },
 ]

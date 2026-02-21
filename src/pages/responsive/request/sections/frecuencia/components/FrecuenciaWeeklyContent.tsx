@@ -5,13 +5,13 @@ import { cn } from '@lib/utils/cn'
 import type { WeekdayValue } from '../../../context/ResponsiveRequestFormContext'
 
 const weekDays = [
-  { label: 'Lun', value: 'mon' },
-  { label: 'Mar', value: 'tue' },
-  { label: 'Mié', value: 'wed' },
-  { label: 'Jue', value: 'thu' },
-  { label: 'Vie', value: 'fri' },
-  { label: 'Sáb', value: 'sat' },
-  { label: 'Dom', value: 'sun' },
+  { label: 'Mon', value: 'mon' },
+  { label: 'Tue', value: 'tue' },
+  { label: 'Wed', value: 'wed' },
+  { label: 'Thu', value: 'thu' },
+  { label: 'Fri', value: 'fri' },
+  { label: 'Sat', value: 'sat' },
+  { label: 'Sun', value: 'sun' },
 ] as const
 
 type FrecuenciaWeeklyContentProps = {
@@ -44,12 +44,12 @@ const FrecuenciaWeeklyContent = ({
         headingTone="neutral"
         headingLevel={3}
         titleSpacing="compact"
-        title="Día(s) de la semana"
+        title="Day(s) of the week"
       />
       <div
         className="grid grid-cols-4 gap-2 sm:grid-cols-7"
         role="group"
-        aria-label="Seleccionar días de la semana"
+        aria-label="Select weekdays"
       >
         {weekDays.map((day) => {
           const isSelected = selectedDaysSet.has(day.value)

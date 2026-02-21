@@ -27,7 +27,7 @@ const GaleriaCarousel = ({ images }: { images: GalleryImage[] }) => {
     <div
       ref={scrollerRef}
       className="-mx-1 mb-8 flex snap-x snap-mandatory gap-6 overflow-x-auto px-1 pb-1 focus-outline-brand"
-      aria-label="Carrusel de imágenes de la galería"
+      aria-label="Gallery image carousel"
       role="region"
       tabIndex={0}
       onKeyDown={handleKeyDown}
