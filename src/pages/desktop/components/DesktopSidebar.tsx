@@ -28,7 +28,7 @@ const DesktopSidebar = () => {
 const SidebarBrand = () => (
   <div className="flex items-center justify-between">
     <div className="flex items-center gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-linear-to-br from-teal-300 to-teal-500 text-white shadow" />
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-linear-to-br from-client-100 to-client-120 text-white shadow" />
       <p className="text-pinned-greyscale-140 text-lg font-semibold">TaskNest</p>
     </div>
     <button
