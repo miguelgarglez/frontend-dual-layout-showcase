@@ -4,7 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>construccion-layouts</title>
+    <script type="text/javascript">
+      ;(function (location) {
+        if (location.search[1] !== '/') {
+          return
+        }
+
+        const decoded = location.search
+          .slice(1)
+          .split('&')
+          .map((segment) => segment.replace(/~and~/g, '&'))
+          .join('?')
+
+        window.history.replaceState(
+          null,
+          '',
+          location.pathname.slice(0, -1) + decoded + location.hash,
+        )
+      })(window.location)
+    </script>
+    <title>Frontend Dual Layout Showcase</title>
   </head>
   <body>
     <div id="root"></div>

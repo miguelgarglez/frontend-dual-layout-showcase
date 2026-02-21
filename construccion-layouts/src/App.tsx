@@ -6,10 +6,11 @@ import DesktopContentRenderer from '@pages/desktop/DesktopContentRenderer'
 import { desktopContentPages, type DesktopContentPageKey } from '@pages/desktop/contentPages'
 
 const desktopContentPageKeys = Object.keys(desktopContentPages) as DesktopContentPageKey[]
+const routerBasename = import.meta.env.BASE_URL
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/desktop" element={<DesktopLayout />}>

@@ -5,7 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/frontend-dual-layout-showcase/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -24,4 +25,4 @@ export default defineConfig({
     setupFiles: './src/tests/setup.ts',
     css: true,
   },
-})
+}))
