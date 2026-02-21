@@ -11,7 +11,7 @@ export const servicesData: ServiceRow[] = [
     children: [
       {
         id: 'silla',
-        title: 'Silla',
+        title: 'Chair',
         icon: RockingChair,
         defaultOpen: true,
         details: [
