@@ -8,7 +8,7 @@ const Home = () => (
     </header>
 
     <nav className="flex flex-col gap-3 sm:flex-row">
-      <Link className="rounded-full bg-teal-500 px-6 py-2 text-white" to="/desktop">
+      <Link className="rounded-full bg-client-100 px-6 py-2 text-white hover:bg-client-120 transition-colors" to="/desktop">
         Desktop flow
       </Link>
       <Link className="rounded-full border border-slate-300 px-6 py-2 text-slate-900" to="/responsive">
