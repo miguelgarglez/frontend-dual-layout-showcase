@@ -10,10 +10,10 @@ const Home = () => (
     </header>
 
     <nav className="mx-auto flex w-full max-w-xl flex-col items-center gap-3 sm:flex-row sm:justify-center">
-      <Link className="w-full rounded-full bg-client-100 px-6 py-2 text-center text-white transition-colors hover:bg-client-120 sm:w-auto sm:min-w-56" to="/desktop">
+      <Link className="inline-flex w-full items-center justify-center rounded-full bg-client-100 px-6 py-2 text-white transition-colors hover:bg-client-120 sm:w-auto sm:min-w-56" to="/desktop">
         Desktop flow
       </Link>
-      <Link className="w-full rounded-full border border-slate-300 px-6 py-2 text-center text-slate-900 sm:w-auto sm:min-w-56" to="/responsive">
+      <Link className="inline-flex w-full items-center justify-center rounded-full border border-slate-300 px-6 py-2 text-slate-900 sm:w-auto sm:min-w-56" to="/responsive">
         Mobile-first flow
       </Link>
     </nav>
